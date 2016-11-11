@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Hello_Dickbutt
 {
@@ -33,7 +29,7 @@ namespace Hello_Dickbutt
             Console.WriteLine(begin + andthen); // double lets you add decimals
 
 
-
+            Console.WriteLine("New Thing");
 
 
 
