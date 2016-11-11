@@ -8,30 +8,27 @@ namespace Hello_Dickbutt
         {
             // Important code below here
 
-            string dog = "woof";
-            string cat = "meow";
+            bool blah = true;
+            bool glarg = false;
+            bool lala = true;
 
-            Console.WriteLine(dog); // this will display the word woof as the string in the parenthesis is dog and dog = woof as per string line above
-            Console.WriteLine(cat);
+            Console.WriteLine("Before Testing for true.");
+            // && = AND
+            // ! = NOT
+            // || = OR
 
-            int first = 1;
-            int second = 2;
-            int third = first + second;
-            Console.WriteLine(third); // this will add the first two intergers to result in an answer
-            // WriteLine will return to a new line, Write will display two 
+            bool isTrue = !(glarg && blah) || false && true || !false;
 
-            int one = 1;
-            int two = 2;
-            Console.WriteLine(1 + 2); // this simplifies the above
+            if (isTrue)
+            {
+                Console.WriteLine("The thing was true.");
+            }
+            else
+            {
+                Console.WriteLine("The thing was not true.");
+            }
 
-            int begin = 1;
-            double andthen = 2.5;
-            Console.WriteLine(begin + andthen); // double lets you add decimals
-
-
-            Console.WriteLine("New Thing");
-
-            // Eat a dickbutt
+            Console.WriteLine("After testing for true.");
 
             Console.ReadLine();
         }
