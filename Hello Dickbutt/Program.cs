@@ -31,7 +31,7 @@ namespace Hello_Dickbutt
 
             Console.WriteLine("New Thing");
 
-
+            // Eat a dickbutt
 
             Console.ReadLine();
         }
