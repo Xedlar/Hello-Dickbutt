@@ -10,7 +10,7 @@ namespace Hello_Dickbutt
 
             bool blah = true;
             bool glarg = false;
-            bool lala = true;
+           
 
             Console.WriteLine("Before Testing for true.");
             // && = AND
@@ -30,6 +30,26 @@ namespace Hello_Dickbutt
 
             Console.WriteLine("After testing for true.");
 
+            bool fun = true;
+            bool funny = false;
+
+            Console.WriteLine("if it's fun and funny");
+
+            bool yesisTrue = fun && !funny;
+
+            if (yesisTrue)
+            {
+                Console.WriteLine("You better not laugh your arse off");
+
+            }
+            else
+            {
+                Console.WriteLine("Oh look how dumb your face became.");
+
+
+
+
+            }
             Console.ReadLine();
         }
 
