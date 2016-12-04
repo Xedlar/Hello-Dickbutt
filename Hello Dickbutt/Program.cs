@@ -58,9 +58,48 @@ namespace Hello_Dickbutt
         {
             for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("Turtles");
+                Console.Write("The variable i is currently: ");
+                Console.WriteLine(i);
             }
 
+            Console.WriteLine("!!!!!NEW LINE!!!!!");
+
+            List<string> words = new List<string>() { "dick", "butt", "salami", "moo" };
+            for (int i = 0; i < words.Count; i++)
+            {
+                Console.WriteLine(words[i]);
+            }
+
+            List<int> numbers = new List<int>();
+            for (int i = 0; i < 300; i++)
+            {
+                numbers.Add(i);
+            }
+            
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+        }
+
+        public static void PlayingWithErrors()
+        {
+            List<string> words = new List<string>() { "dick", "butt", "salami", "moo" }; //can you here me now?
+
+            try
+            {
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.WriteLine(words[i]);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("An error occured");
+                Console.WriteLine(ex.Message);
+            }
+
+            Console.WriteLine("The rest");
         }
 
         public static void PlayingWithBooleans()
