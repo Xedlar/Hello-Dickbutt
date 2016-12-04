@@ -11,24 +11,11 @@ namespace Hello_Dickbutt
             bool blah = true;
             bool glarg = false;
            
-
-            Console.WriteLine("Before Testing for true.");
             // && = AND
             // ! = NOT
             // || = OR
 
-            bool isTrue = !(glarg && blah) || false && true || !false;
-
-            if (isTrue)
-            {
-                Console.WriteLine("The thing was true.");
-            }
-            else
-            {
-                Console.WriteLine("The thing was not true.");
-            }
-
-            Console.WriteLine("After testing for true.");
+            
 
             bool fun = true;
             bool funny = false;
