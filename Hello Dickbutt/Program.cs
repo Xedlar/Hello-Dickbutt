@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Hello_Dickbutt
 {
@@ -7,15 +8,71 @@ namespace Hello_Dickbutt
         static void Main(string[] args)
         {
             // Important code below here
+            PlayingWithForLoops();
+            
+            Console.ReadLine();
+        }
 
+        public static void PlayingWithList()
+        {
+            int blah = 3;
+            bool isStupid = true;
+
+            List<int> numbers = new List<int>();   // 1, 3, 2
+
+            numbers.Add(1);
+            numbers.Add(3);
+            numbers.Add(2);
+
+            List<string> words = new List<string>(); // dick, butt, salami
+
+            words.Add("dick");
+            words.Add("butt");                   // index list, position of list starts at zero, because it's dumb
+            words.Add("salami");
+
+            //string somethingElse = words[2];
+
+            Console.WriteLine(words[1]);
+
+            words[1] = "blah blah blah";    // dick, blah blah blah, salami
+
+            Console.WriteLine(words[1]);
+
+            words.Remove("blah blah blah");  // dick, salami
+
+            Console.WriteLine(words[1]);
+
+            words.Clear();   // nothing in the list
+
+            words.Add("something");
+            words.Add("what waht");
+
+            Console.WriteLine(words[1]);
+
+            List<int> moreNumbers = new List<int>() { 1, 5, 17, 2 }; //so you don't have to type numvers.Add(1);
+
+            List<bool> whyWouldYouEverDoThis = new List<bool>() { true, false, false, true, true };
+        }
+
+        public static void PlayingWithForLoops()
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Turtles");
+            }
+
+        }
+
+        public static void PlayingWithBooleans()
+        {
             bool blah = true;
             bool glarg = false;
-           
+
             // && = AND
             // ! = NOT
             // || = OR
 
-            
+
 
             bool fun = true;
             bool funny = false;
@@ -32,12 +89,7 @@ namespace Hello_Dickbutt
             else
             {
                 Console.WriteLine("Oh look how dumb your face became.");
-
-
-
-
             }
-            Console.ReadLine();
         }
 
         public static void DoSomething()
