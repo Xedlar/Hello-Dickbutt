@@ -8,10 +8,13 @@ namespace Hello_Dickbutt
         static void Main(string[] args)
         {
             // Important code below here
-            PlayingWithForLoops();
+            // PlayingWithForLoops();
+            PlayingWithClasses();
             
             Console.ReadLine();
         }
+
+        #region Basic Programming
 
         public static void PlayingWithList()
         {
@@ -152,5 +155,32 @@ namespace Hello_Dickbutt
         {
             return a + b;
         }
+
+        #endregion // Basic Programming
+
+        #region Classes
+
+        public static void PlayingWithClasses()
+        {
+            Car myFirstCar = new Car();
+            myFirstCar._color = "Blue";
+            myFirstCar.MoveForward();
+            myFirstCar.MoveForward();
+            myFirstCar.MoveForward();
+            myFirstCar.DistanceTravelled();
+
+            Car mySecondCar = new Car();
+            mySecondCar._color = "Red";
+            mySecondCar.DistanceTravelled();
+            mySecondCar.MoveForward();
+            mySecondCar.MoveBackward();
+            mySecondCar.DistanceTravelled();
+        }
+
+        #endregion // Classes
     }
+
+
+
+
 }
