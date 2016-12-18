@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace Hello_Dickbutt
 {
-    public class Dog
+    public class Dog : AAnimalBase
     {
         public Dog()
-        { }
+        {
+            _maxStomachCapacity = 80;
+        }
+
+        public override void MakeNoise()
+        {
+            Console.WriteLine("Woof.");
+        }
     }
 }

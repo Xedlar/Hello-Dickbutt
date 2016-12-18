@@ -6,42 +6,23 @@ using System.Threading.Tasks;
 
 namespace Hello_Dickbutt
 {
-    public class Bird
+    // derived class
+    public class Bird : AAnimalBase
     {
         public Bird()
         {
-            _stomachCapacity = 0;
+            _maxStomachCapacity = 10;
+            _animalName = "bird";
         }
 
-        #region Fields
-
-        private int _maxStomachCapacity = 10;
-
-        #endregion
-
-        #region Properties
-
-        private int _stomachCapacity;
-        public int StomachCapacity
-        {
-            get { return _stomachCapacity; }
-            private set { _stomachCapacity = value; }
-        }
-
-        #endregion
-
-        #region Methods
-
-        public void MakeNoise()
+        public override void MakeNoise()
         {
             Console.WriteLine("Cheep cheep.");
         }
 
-        public void Eat(int amountOfFood)
+        public override string ToString()
         {
-
+            return "Hurr durr, I'm a bird, with Stomach " +StomachCapacity;
         }
-
-        #endregion
     }
 }

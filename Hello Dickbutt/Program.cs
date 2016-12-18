@@ -9,7 +9,7 @@ namespace Hello_Dickbutt
         {
             // Important code below here
             // PlayingWithForLoops();
-            PlayingWithClasses();
+            PlayingWithInheritance();
             
             Console.ReadLine();
         }
@@ -188,6 +188,14 @@ namespace Hello_Dickbutt
             Math.Max(5, 1000);
             int answer = MathMe.Add(5, 6);
             int anotherAnswer = MathMe.Add(4, 7);
+        }
+
+        public static void PlayingWithInheritance()
+        {
+            Console.WriteLine("test");
+            var bird = new Bird();
+            bird.ToString();
+
         }
 
         #endregion // Classes
