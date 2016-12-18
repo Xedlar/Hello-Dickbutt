@@ -175,6 +175,15 @@ namespace Hello_Dickbutt
             mySecondCar.MoveForward();
             mySecondCar.MoveBackward();
             mySecondCar.DistanceTravelled();
+
+            Car mythirdCar = new Car();
+            mythirdCar._color = "Hot Pink";
+            mythirdCar.DistanceTravelled();
+            mythirdCar.MoveForward();
+            mythirdCar.MoveForward();
+            mythirdCar.MoveBackward();
+            mythirdCar.DistanceTravelled();
+
         }
 
         #endregion // Classes
