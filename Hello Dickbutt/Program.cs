@@ -163,27 +163,31 @@ namespace Hello_Dickbutt
         public static void PlayingWithClasses()
         {
             Car myFirstCar = new Car();
-            myFirstCar._color = "Blue";
+            //myFirstCar._color = "Blue";
+            myFirstCar.SetColor("Dickbutt");
+            myFirstCar.Color = "Black";
             myFirstCar.MoveForward();
             myFirstCar.MoveForward();
             myFirstCar.MoveForward();
-            myFirstCar.DistanceTravelled();
+            Console.WriteLine(myFirstCar);
+
+            int something = myFirstCar.DistanceTravelled;
+            //myFirstCar._color = "Orange";
 
             Car mySecondCar = new Car();
-            mySecondCar._color = "Red";
-            mySecondCar.DistanceTravelled();
+            //mySecondCar._color = "Red";
             mySecondCar.MoveForward();
             mySecondCar.MoveBackward();
-            mySecondCar.DistanceTravelled();
 
             Car mythirdCar = new Car();
-            mythirdCar._color = "Hot Pink";
-            mythirdCar.DistanceTravelled();
+            //mythirdCar._color = "Hot Pink";
             mythirdCar.MoveForward();
             mythirdCar.MoveForward();
             mythirdCar.MoveBackward();
-            mythirdCar.DistanceTravelled();
 
+            Math.Max(5, 1000);
+            int answer = MathMe.Add(5, 6);
+            int anotherAnswer = MathMe.Add(4, 7);
         }
 
         #endregion // Classes
