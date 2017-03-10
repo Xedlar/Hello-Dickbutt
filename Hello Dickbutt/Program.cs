@@ -1,16 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows;
 
 namespace Hello_Dickbutt
 {
+    public struct Whatever
+    {
+        int a;
+        int b { get; set; }
+
+        void DoSomething()
+        {
+
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
             // Important code below here
             // PlayingWithForLoops();
-            PlayingWithInheritance();
-            
+            //PlayingWithInheritance();
+
+            PlayingWithStructures();
+
             Console.ReadLine();
         }
 
@@ -199,9 +213,70 @@ namespace Hello_Dickbutt
         }
 
         #endregion // Classes
+
+        #region Structures
+
+        public static void PlayingWithStructures()
+        {
+            // ref vs val. Reference vs Value
+
+            //var a = 5;
+
+            //var c = a;
+
+            //Console.WriteLine(c); //5
+
+            //a = 10;
+
+            //Console.WriteLine(c);
+
+            //var aa = "5";
+
+            //var cc = aa;
+
+            //Console.WriteLine(cc);
+
+            //aa = "10";
+
+            //Console.WriteLine(cc);
+
+            //var aaa = new List<int>();
+            //aaa.Add(5);
+
+            //var ccc = aaa;
+
+            //foreach (var item in ccc)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            //aaa = new List<int>();
+            //aaa.Add(6);
+
+            //foreach (var item in ccc)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            var a = 5;
+            a = 6;
+            Console.WriteLine(a);
+
+            IncreaseVariable(ref a);
+
+            Console.WriteLine(a);
+
+            var p = new Point(5, 5);
+            p.Y++;
+
+            p = new Point(5, 6);
+        }
+
+        public static void IncreaseVariable(ref int q)
+        {
+            q++;
+        }
+
+        #endregion // Structures
     }
-
-
-
-
 }
