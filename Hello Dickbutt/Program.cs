@@ -9,6 +9,8 @@ namespace Hello_Dickbutt
         {
             // Important code below here
             // PlayingWithForLoops();
+
+
             PlayingWithInheritance();
             
             Console.ReadLine();
@@ -202,6 +204,43 @@ namespace Hello_Dickbutt
     }
 
 
+ public static void
+    
+
+
+class Program
+    {
+        static void Main(string[] args)
+        {
+            char ch;
+
+            do
+            {
+                Console.WriteLine("Do you think this is some sort of game?? (Y/N) ");
+                ch = Convert.ToChar(Console.ReadLine().ToUpper());
+                Console.WriteLine("Are you sure?? (Y/N) ");
+                ch = Convert.ToChar(Console.ReadLine().ToUpper());
+            } while (ch.Equals(Char.Parse("N")));
+
+            Console.WriteLine("Listen buddy, I dunno about you but I could go for some wings right about now. ");
+            Console.WriteLine();
+
+            do
+            {
+                Console.WriteLine("Should we go get some wings? (Y/N) ");
+                ch = Convert.ToChar(Console.ReadLine().ToUpper());
+            } while (ch.Equals(Char.Parse("N")));
+
+            do
+            {
+                Console.WriteLine("Is there any chance of a whiskey with those wings? (Y/N) ");
+                ch = Convert.ToChar(Console.ReadLine().ToUpper());
+
+            } while (ch.Equals(Char.Parse("N")));
+            Console.WriteLine("Hey cool, let's take your car. Mine is missing a wheel");
+            Console.ReadLine();
+        }
+    }
 
 
 }
